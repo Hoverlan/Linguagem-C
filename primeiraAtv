@@ -1,0 +1,17 @@
+/*Faça um programa que preenche uma matriz 5 x 5 com o produto do valor da linha 
+e da coluna de cada elemento. Ao final exiba a matriz em tela.*/
+#include<stdio.h>
+
+int main(){
+	int matriz[5][5];
+	int l, c;
+	
+		printf("\n\t O produto dos elementos da matriz:");
+	for(l=0; l<5; l++){
+		printf("\t\n\t ------------------------------------\n");
+		for(c=0; c<5; c++){
+			matriz[l][c] = (l+1)*(c+1);
+			printf("\t|%0.2d |", matriz[l][c]);
+		}
+	}
+}
